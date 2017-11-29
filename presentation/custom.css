@@ -6,3 +6,7 @@ pre {
 li {
   line-height: 1.5;
 }
+
+code {
+  font-size: 0.75em;
+}
