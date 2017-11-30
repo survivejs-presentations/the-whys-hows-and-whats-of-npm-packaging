@@ -43,6 +43,9 @@ const images = mapValues(
     bundler: require("../images/bundler.png"),
     moduleCounts: require("../images/module-counts.png"),
     name: require("../images/name.jpg"),
+    dependency: require("../images/dependency.jpg"),
+    lock: require("../images/lock.jpg"),
+    range: require("../images/range.jpg"),
     recognition: require("../images/recognition.jpg"),
     reuse: require("../images/reuse.jpg"),
     survivejs: require("../images/survivejs.png"),
@@ -86,7 +89,7 @@ export default class Presentation extends React.Component {
           bgImage={images.reuse}
           bgDarken={0.45}
         >
-          <Heading size={1} caps textColor="primary">
+          <Heading size={1} textColor="primary">
             Reuse
           </Heading>
           <Text>
@@ -104,7 +107,7 @@ export default class Presentation extends React.Component {
           bgImage={images.recognition}
           bgDarken={0.45}
         >
-          <Heading size={1} caps textColor="primary">
+          <Heading size={1} textColor="primary">
             Recognition
           </Heading>
           <Text>
@@ -238,8 +241,8 @@ export default class Presentation extends React.Component {
           bgImage={images.name}
           bgDarken={0.45}
         >
-          <Heading size={1} caps fit textColor="primary">
-            1. Find a Suitable Name
+          <Heading size={1} fit textColor="primary">
+            1. Find a suitable name
           </Heading>
           <Text>
             <Link
@@ -418,31 +421,58 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
-        <Slide transition={slideTransition}>
-          <Heading size={2}>What to Consider?</Heading>
-          <List>
-            <Appear>
-              <ListItem>
-                Version ranges - ^, ~, * (dangerous!), also {`>=`}, {`<`} and
-                combinations, …
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                Use <b>lockfiles</b> (<i>package-lock.json</i>, <i>yarn.lock</i>)
-                to manage (npm5+, yarn)
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                Use{" "}
-                <Link href="https://survivejs.com/maintenance/code-quality/dependencies/">
-                  dependency management tooling
-                </Link>{" "}
-                to update to newer versions
-              </ListItem>
-            </Appear>
-          </List>
+        <Slide
+          transition={slideTransition}
+          bgImage={images.range}
+          bgDarken={0.45}
+        >
+          <Heading size={1} fit textColor="primary">
+            Consider version ranges (^, ~, *, {`>=`}, {`<`}, ...)
+          </Heading>
+          <Text>
+            <Link
+              href="https://pixabay.com/en/mountains-landscape-mist-smoke-889131/"
+              textColor="rgba(255,255,255,0.5)"
+            >
+              skeeze
+            </Link>
+          </Text>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.lock}
+          bgDarken={0.45}
+        >
+          <Heading size={1} fit textColor="primary">
+            Use lockfiles (package-lock.json, yarn.lock)
+          </Heading>
+          <Text>
+            <Link
+              href="https://pixabay.com/en/door-blue-rusty-entrance-1587863/"
+              textColor="rgba(255,255,255,0.5)"
+            >
+              haalkab
+            </Link>
+          </Text>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.dependency}
+          bgDarken={0.45}
+        >
+          <Heading size={1} caps fit textColor="primary">
+            Use dependency management tooling to update to newer versions
+          </Heading>
+          <Text>
+            <Link
+              href="https://pixabay.com/en/coffee-cafe-beverage-cup-2319112/"
+              textColor="rgba(255,255,255,0.5)"
+            >
+              Engin_Akyurt
+            </Link>
+          </Text>
         </Slide>
 
         <Slide transition={slideTransition}>
