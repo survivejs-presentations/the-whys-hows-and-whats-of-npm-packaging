@@ -399,7 +399,9 @@ export default class Presentation extends React.Component {
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem>Rename - See deprecation</ListItem>
+              <ListItem>
+                Rename - See <code>npm deprecate</code> again
+              </ListItem>
             </Appear>
             <Appear>
               <ListItem>
