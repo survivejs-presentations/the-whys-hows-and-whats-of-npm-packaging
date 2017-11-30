@@ -382,18 +382,6 @@ export default class Presentation extends React.Component {
                 Publish pre-release versions to gather feedback
               </ListItem>
             </Appear>
-            <Appear>
-              <ListItem>
-                Version ranges - ^, ~, * (dangerous!), also {`>=`}, {`<`} and
-                combinations, …
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                Use <b>lockfiles</b> (<i>package-lock.json</i>, <i>yarn.lock</i>)
-                to manage (npm5+, yarn)
-              </ListItem>
-            </Appear>
           </List>
         </Slide>
 
@@ -417,6 +405,39 @@ export default class Presentation extends React.Component {
               <ListItem>
                 Share authorship - Consider namespaces and teams for larger
                 projects
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="secondary">
+          <Heading size={2} textColor="tertiary">
+            How to Consume Packages?
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>What to Consider?</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                Version ranges - ^, ~, * (dangerous!), also {`>=`}, {`<`} and
+                combinations, …
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Use <b>lockfiles</b> (<i>package-lock.json</i>, <i>yarn.lock</i>)
+                to manage (npm5+, yarn)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Use{" "}
+                <Link href="https://survivejs.com/maintenance/code-quality/dependencies/">
+                  dependency management tooling
+                </Link>{" "}
+                to update to newer versions
               </ListItem>
             </Appear>
           </List>
