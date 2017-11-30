@@ -218,15 +218,9 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={slideTransition} bgColor="secondary">
-          <Heading size={2} textColor="tertiary">
-            What to Consider?
-          </Heading>
-        </Slide>
-
         <Slide transition={slideTransition} bgImage={images.do} bgDarken={0.45}>
           <Heading size={1} fit textColor="primary">
-            Who does the work
+            Who does the work?
           </Heading>
           <Text>
             <Link
