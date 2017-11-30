@@ -41,6 +41,9 @@ const images = mapValues(
   {
     build: require("../images/build.jpg"),
     bundler: require("../images/bundler.png"),
+    do: require("../images/do.jpg"),
+    maintain: require("../images/maintain.jpg"),
+    pay: require("../images/pay.jpg"),
     moduleCounts: require("../images/module-counts.png"),
     name: require("../images/name.jpg"),
     dependency: require("../images/dependency.jpg"),
@@ -215,19 +218,60 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={slideTransition}>
-          <Heading size={2}>What to Consider?</Heading>
-          <List>
-            <Appear>
-              <ListItem>Who does the work?</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Who maintains the work?</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Who pays for the work?</ListItem>
-            </Appear>
-          </List>
+        <Slide transition={slideTransition} bgColor="secondary">
+          <Heading size={2} textColor="tertiary">
+            What to Consider?
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition} bgImage={images.do} bgDarken={0.45}>
+          <Heading size={1} fit textColor="primary">
+            Who does the work
+          </Heading>
+          <Text>
+            <Link
+              href="https://pixabay.com/en/not-hear-not-see-do-not-speak-funny-1760750/"
+              textColor="rgba(255,255,255,0.5)"
+            >
+              Alexas_Fotos
+            </Link>
+          </Text>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.maintain}
+          bgDarken={0.45}
+        >
+          <Heading size={1} fit textColor="primary">
+            Who maintains the work?
+          </Heading>
+          <Text>
+            <Link
+              href="https://pixabay.com/en/cleanliness-maid-maintains-cleaning-2799459/"
+              textColor="rgba(255,255,255,0.5)"
+            >
+              pascalhelmer
+            </Link>
+          </Text>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.pay}
+          bgDarken={0.45}
+        >
+          <Heading size={1} fit textColor="primary">
+            Who pays for the work?
+          </Heading>
+          <Text>
+            <Link
+              href="https://pixabay.com/en/money-card-business-credit-card-256319/"
+              textColor="rgba(255,255,255,0.5)"
+            >
+              jarmoluk
+            </Link>
+          </Text>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
