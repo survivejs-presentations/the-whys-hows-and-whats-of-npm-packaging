@@ -566,7 +566,7 @@ export default class Presentation extends React.Component {
           <Link href="https://www.survivejs.com/maintenance/">
             <Heading size={1}>SurviveJS - Maintenance</Heading>
           </Link>
-          <Image src={images.survivejs} margin="0px auto 40px" height="324px" />
+          <Image src={images.survivejs} margin="40px auto" height="324px" />
           <Link href="https://twitter.com/bebraw">
             <Heading size={2} textColor="secondary" fit>
               by Juho Vepsäläinen and Artem Sapegin
