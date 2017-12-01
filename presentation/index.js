@@ -126,7 +126,7 @@ export default class Presentation extends React.Component {
 
         <Slide transition={slideTransition}>
           <Heading size={2} fit>
-            What's in a Distributed Package?
+            What's in a Published Package?
           </Heading>
           <List>
             <Appear>
@@ -461,8 +461,16 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem>
+                <code>npm publish</code>
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
                 Publish pre-release versions to gather feedback
               </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Consider automating releases</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -541,7 +549,7 @@ export default class Presentation extends React.Component {
           bgImage={images.dependency}
           bgDarken={0.45}
         >
-          <Heading size={1} caps fit textColor="primary">
+          <Heading size={1} fit textColor="primary">
             Use dependency management tooling to update to newer versions
           </Heading>
           <Text>
