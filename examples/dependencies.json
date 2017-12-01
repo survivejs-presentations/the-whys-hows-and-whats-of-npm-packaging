@@ -1,0 +1,19 @@
+{
+  /* Package dependencies needed to use it */
+  "dependencies": {
+    /* ... */
+  },
+
+  /* Package development dependencies needed to develop/compile it */
+  "devDependencies": {
+    /* ... */
+  },
+
+  /* Package peer dependencies. The consumer fixes the exact versions. */
+  /* To include RC versions to the range, consider */
+  /* using a pattern such as ^4.0.0-0 */
+  "peerDependencies": {
+    "lodash": ">= 3.5.0 < 4.0.0",
+    "react": ">= 0.11.2 < 17.0.0"
+  }
+}

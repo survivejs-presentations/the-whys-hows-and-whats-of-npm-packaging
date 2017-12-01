@@ -1,0 +1,11 @@
+{
+  /* Links to repository, homepage, and issue tracker */
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<organization/user>/<project>.git"
+  },
+  "homepage": "https://<organization/user>.github.io/<project>/",
+  "bugs": {
+    "url": "https://github.com/<organization/user>/<project>/issues"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  /* Entry point for terminal (i.e., <package name>). */
+  /* Don't set this unless you intend to allow Command line usage */
+  "bin": "bin/index.js",
+
+  /* Entry point (defaults to index.js) */
+  "main": "dist-modules/",
+
+  /* ES6 module based entry point for tree shaking bundlers to use. */
+  /* The transformation should retain the module definitions while */
+  /* transforming everything else. */
+  "module": "dist/"
+}

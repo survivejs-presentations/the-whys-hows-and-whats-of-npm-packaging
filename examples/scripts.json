@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "catalog start docs",
+
+    /* Namespacing (namespace:task) is a convention used for */
+    /* grouping. npm doesn't do anything with the information. */
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:lint": "eslint . --ignore-path .gitignore",
+
+    "preversion": "npm run test",
+    "prepublishOnly": "npm run dist:es6 && npm run dist:modules",
+    "postpublish": "npm run gh-pages && npm run gh-pages:deploy",
+    "postinstall": "node lib/post_install.js"
+  }
+}

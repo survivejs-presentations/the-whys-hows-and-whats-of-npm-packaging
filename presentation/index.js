@@ -41,6 +41,7 @@ const images = mapValues(
   {
     build: require("../images/build.jpg"),
     bundler: require("../images/bundler.png"),
+    comments: require("../images/comments.jpg"),
     do: require("../images/do.jpg"),
     maintain: require("../images/maintain.jpg"),
     pay: require("../images/pay.jpg"),
@@ -153,42 +154,82 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
+        <Slide transition={slideTransition} bgColor="secondary">
+          <Heading size={2} fit textColor="tertiary">
+            package.json
+          </Heading>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.comments}
+          bgDarken={0.45}
+        >
+          <Heading size={1} textColor="primary">
+            No comments
+          </Heading>
+          <Text>
+            <Link
+              href="https://pixabay.com/en/cms-wordpress-265128/"
+              textColor="rgba(255,255,255,0.5)"
+            >
+              pixelcreatures
+            </Link>
+          </Text>
+        </Slide>
+
         <Slide transition={slideTransition}>
-          <Heading size={2}>package.json</Heading>
-          <List>
-            <Appear>
-              <ListItem>Only JSON - No comments</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                <i>scripts</i> - <code>npm run {`<name>`}</code>,{" "}
-                <code>pre</code>, <code>post</code>
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                <i>bin</i>, <i>main</i>, <i>module</i> - Entry points
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                <i>dependencies</i>, <i>devDependencies</i>,{" "}
-                <i>peerDependencies</i> - Depends on the context! Also more
-                types.
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                <i>repository</i>, <i>homepage</i>, <i>bugs</i> - Links
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                Even more properties like <i>keywords</i>, sometimes tooling
-                metadata
-              </ListItem>
-            </Appear>
-          </List>
+          <Heading size={2}>scripts</Heading>
+          <CodePane
+            lang="json"
+            source={require("raw-loader!../examples/scripts.json")}
+            margin="20px auto"
+            overflow="overflow"
+          />
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>
+            <i>bin</i>, <i>main</i>, <i>module</i> - Entries
+          </Heading>
+          <CodePane
+            lang="json"
+            source={require("raw-loader!../examples/entries.json")}
+            margin="20px auto"
+            overflow="overflow"
+          />
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            <i>dependencies</i>, <i>devDependencies</i>, <i>dependencies</i>,{" "}
+            <i>peerDependencies</i>, ...
+          </Heading>
+          <CodePane
+            lang="json"
+            source={require("raw-loader!../examples/dependencies.json")}
+            margin="20px auto"
+            overflow="overflow"
+          />
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            Links - <i>repository</i>, <i>homepage</i>, <i>bugs</i>
+          </Heading>
+          <CodePane
+            lang="json"
+            source={require("raw-loader!../examples/links.json")}
+            margin="20px auto"
+            overflow="overflow"
+          />
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1} fit>
+            Even more properties like <i>keywords</i>, sometimes tooling
+            metadata
+          </Heading>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
