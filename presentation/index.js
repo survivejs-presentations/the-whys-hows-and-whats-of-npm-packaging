@@ -238,27 +238,6 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
-        <Slide transition={slideTransition}>
-          <Heading size={2}>To Consume or to Develop?</Heading>
-          <List>
-            <Appear>
-              <ListItem>Use an existing package</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Enhance an existing package</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Take over an existing package</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Fork an existing package</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Develop your own package</ListItem>
-            </Appear>
-          </List>
-        </Slide>
-
         <Slide transition={slideTransition} bgImage={images.do} bgDarken={0.45}>
           <Heading size={1} fit textColor="primary">
             Who does the work?
@@ -307,6 +286,27 @@ export default class Presentation extends React.Component {
               jarmoluk
             </Link>
           </Text>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>To Consume or to Develop?</Heading>
+          <List>
+            <Appear>
+              <ListItem>Use an existing package</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Enhance an existing package</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Take over an existing package</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Fork an existing package</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Develop your own package</ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
