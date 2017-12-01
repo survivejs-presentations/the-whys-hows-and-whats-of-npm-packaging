@@ -567,11 +567,10 @@ export default class Presentation extends React.Component {
             <Heading size={1}>SurviveJS - Maintenance</Heading>
           </Link>
           <Image src={images.survivejs} margin="40px auto" height="324px" />
-          <Link href="https://twitter.com/bebraw">
-            <Heading size={2} textColor="secondary" fit>
-              by Juho Vepsäläinen and Artem Sapegin
-            </Heading>
-          </Link>
+          <Heading size={2} fit>
+            by <Link href="https://twitter.com/bebraw">Juho Vepsäläinen</Link>{" "}
+            and <Link href="https://twitter.com/iamsapegin">Artem Sapegin</Link>
+          </Heading>
         </Slide>
       </Deck>
     );
